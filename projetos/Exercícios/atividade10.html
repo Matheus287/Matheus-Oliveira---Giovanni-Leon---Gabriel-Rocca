@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>atividade10</title>
+</head>
+<body>
+  <h1>atividade 10</h1>
+  <p></p>
+  <p>10. Dado um vetor de palavras, crie um código que percorra o vetor e conte quantas vezes uma palavra específica aparece. Armazene o resultado em uma variável contagem e exiba o valor.</p>
+  <script>
+
+    let palavras = ["Maçã", "Banana", "Laranja", "Morango", "Abacaxi", "Manga", "Uva", "Pêra", "Melancia", "Kiwi", "Cereja", "Pêssego", "Melão", "Ameixa", "Framboesa", "Maracujá", "Goiaba", "Jabuticaba", "Coco", "Nectarina", "Caqui", "Tâmara", "Damascos", "Graviola", "Mirtilo", "Cabeludinha", "Lucuma", "Rambutan", "Longan", "Physalis", "Mangaba",  "Pitanga", "Figo", "Jaca", "Açaí", "Tangerina", "Romã", "Carambola", "Cupuaçu", "Maçã", "Banana", "Laranja", "Morango", "Abacaxi", "Manga", "Uva", "Pêra", "Melancia", "Kiwi", "Cabeludinha", "Figo", "Maçã", "Banana", "Laranja", "Morango", "Abacaxi", "Manga", "Uva", "Pêra", "Melancia", "Maçã", "Banana", "Laranja", "Morango", "Abacaxi", "Manga", "Uva", "Pêra"];
+  
+
+    function isValidWord(word) {
+      return isNaN(word) && word.trim() !== "";
+    }
+
+ 
+    let palavraEspecifica = prompt("Digite o nome da fruta que você deseja contar, digite a primeira letra em maiúsculo por favor:");
+
+
+    if (isValidWord(palavraEspecifica)) {
+      let contagem = 0;
+
+
+      for (let i = 0; i < palavras.length; i++) {
+
+        if (palavras[i] === palavraEspecifica) {
+
+          contagem++;
+        }
+      }
+
+
+      alert("A fruta '" + palavraEspecifica + "' aparece " + contagem + " vezes no vetor.");
+    } else {
+
+      alert("Entrada inválida. Por favor, digite uma palavra válida com a primeira letra em maiúsculo.");
+    }
+  </script>
+</body>
+</html>

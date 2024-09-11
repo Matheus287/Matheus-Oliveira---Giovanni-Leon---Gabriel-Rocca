@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/Logo1.png">
+    <title>Portfólio - Matheus Oliveira</title>
+</head>
+
+<body>
+    <h6 id="inicio">.</h6>
+    <section class="menu-responsivo">
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <img src="img/Logo.png">
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#inicio" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#projetos" class="nav-link">Projetos</a></li>
+                    <li class="nav-item"><a href="#sobre" class="nav-link"> Sobre</a></li>
+                </ul>
+            </div>
+            <div class="contact-button">
+                <a href="#contato"><button>Contato</button></a>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="img/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+            </ul>
+
+            <div class="contact-button">
+                <button><a href="#">Contato</a></button>
+            </div>
+        </div>
+    </header>
+    </section>
+    <h6 id="inicio">.</h6>
+    <main>
+        <section class="content">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-content">
+                        <p><h1>BEM-VINDO AO<br> MEU PORTFÓLIO</h1></p>
+                        <p><h2>Este portfólio foi desenvolvido para um trabalho escolar por Matheus de Sousa Oliveira.
+                            Este projeto irá mostrar algumas áreas de conhecimento de programação e alguns outros projetos 
+                            ja produzidos anteriormente.</h2></p>
+                    </div>
+                    <div class="img-content"><img src="img/Perfil.png"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills"  id="skills">
+            <div class="interface">
+                <div class="titulo"><h1>Estou aprendendo.</h1></div>
+                    <div class="flex">
+                        <div class="skills-box">
+                            <h2>HTML</h2>
+                            <img src="img/html.png">
+                        </div>
+                        <div class="skills-box">
+                            <h2>CSS</h2>
+                            <img src="img/css.png">
+                        </div>
+                        <div class="skills-box">
+                            <h2>JAVA</h2>
+                            <img src="img/java.png">
+                        </div>
+                        <div class="skills-box">
+                            <h2>Javascript</h2>
+                            <img src="img/js.png">
+                        </div>
+                    </div>
+            </div>
+        </section>
+
+        <section class="projetos" id="projetos">
+            <div class="interface">
+            <div class="titulo"><h1>Projetos</h1></div>
+                <div class="flex">
+                    <div class="projeto-box">
+                        <h2>Salários Mínimos</h2>
+                        <h3>Um progama que le o valor do salário mínimo e calcula quantos salários 
+                            mínimos um funcionário ganha imprimindo na tela o resultado.</h3>
+                        <img src="img/java.png">
+                        <a href="projetos/Projeto1Java.zip" target="new"><button>Download</button></a>
+                    </div>
+                    <div class="projeto-box">
+                        <h2>Site padrão</h2>
+                        <h3>Um página web em html estilizada com css.</h3>
+                        <img src="img/html.png"><img src="img/css.png">
+                        <a href="projetos/Projeto2Css.zip" target="new"><button>Download</button></a>
+                    </div>
+                    <div class="projeto-box">
+                        <h2>Formulário</h2>
+                        <h3>Uma página web de formulário para cadastros de usuários do site e para estudantes.</h3>
+                        <img src="img/html.png">
+                        <a href="projetos/Projeto3Html.zip" target="new"><button>Download</button></a>
+                    </div>
+                    <div class="projeto-box">
+                        <h2>Detector de triângulos</h2>
+                        <h3>Um progama que informa se os valores podem ser um triângulo, e
+                            indica, caso os lados formem um triângulo, se o mesmo é: equilátero, isósceles ou escaleno.</h3>
+                        <img src="img/java.png">
+                        <a href="projetos/Projeto4Java.zip" target="new"><button>Download</button></a>
+                    </div>
+                    <div class="projeto-box">
+                        <h2>Exercícios</h2>
+                        <h3>Uma lista de exercícios em Javascript.</h3>
+                        <img src="img/js.png">
+                        <a href="projetos/Exercícios/exercícios.html" target="new"><button>Abrir</button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sobre" id="sobre">
+            <div class="titulo"><h1>Prazer, sou Matheus.</h1></div>
+            <div class="flex">
+                <div class="txt-sobre">Sou um estudante do primeiro ano do ensino médio, do curso de Desenvolvimento de sistemas na Etec de Hortolândia. Estou estudando sobre programação em JAVA e também aprendendo sobre HTML e CSS, e aprendendo Javascript em minha própria casa. Programar para mim é um método de se aprender a pensar para atingir um objetivo. Este portfólio foi desenvolvido para um trabalho das matérias Programação Web, Técnicas de Programação e Algorítimo e Design Digital.</div>
+            </div>
+        </section>
+
+        <section class="contato" id="contato">
+            <div class="titulo"><h1>Contato</h1></div>
+            <div class="txt-contato">Envie uma mensagem no meu E-mail: matheus.oliveira1157@etec.sp.gov.br</div>
+        </section>
+    </main>
+
+    <footer><h5>Matheus de Sousa Oliveira; Giovani Leon de Melo; Gabriel Rocca Lima - Todos os direitos reservados.</h5></footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
